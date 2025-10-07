@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+  <html>
+    <title>Otvoreni Listi Webpage</title>
+
+    <head>
+
+      <meta charset="8">
+
+      <title>Otvoreni Listi</title>
+      <link rel="stylesheet" href="style.css">
+
+     
+    </head>
+
+
+    <body>
+
+       <div class="row-header">
+        <div class="header-container">
+                <div class="col-header">
+            <h1>ЗОРАН ПЕТКОВСКИ</h1>
+               <h3>Кандидат на Демократи за Градоначалник на Гази Баба</h3>
+               </div>
+
+               
+               <div class="col-header">
+                  
+               <img class="mkd-flag" src="icons/mkd.png" alt="Flag">
+               </div>
+       </div>    
+      
+      <div class="container">
+             
+              <div class="row">
+                <div class="col">
+                  <div class="feature-img">
+                    <img src="zoran sliki/Што се Отворени Листи (1).png" width="100%">
+                    <img src="icons/play.png" class="play-btn" onclick="playVideo('zoran video/Sto se Otvoreni Listi.mp4')">
+                   
+
+                  </div>
+                </div>
+               <div class="col">
+                <div class="small-img-row">
+                  <div class="small-img">
+                      <img src="demokrati sliki/map.jpg">
+                      <img src="icons/play.png" class="play-btn" onclick="playVideo('zoran video/stravot.mp4')">
+                      
+                  </div>
+                  <p>Зошто големите партии се плашат од отворени листи?<br>Локални избори 2025</p>
+                </div>
+                 <div class="small-img-row">
+                  <div class="small-img">
+                      <img src="demokrati sliki/map.jpg">
+                      <img src="icons/play.png" class="play-btn" onclick="playVideo('zoran video/olevropa.mp4')">
+                      
+                  </div>
+                  <p>Системи со отворени и полу-отворени листи во Европа <br>Локални избори 2025</p>
+                </div>
+                 <div class="small-img-row">
+                  <div class="small-img">
+                      <img src="demokrati sliki/map.jpg">
+                          <a href="https://www.youtube.com/watch?v=tZBaAIJ8BD0" target="_blank">
+                               <button class="debata-btn"> Дебата</button>
+                               </a>
+
+                  </div>
+                  <p>ИЗБОРИ 2025 „Директно“ со кандидатите за градоначалници на Гази Баба <br></p>
+                </div>
+
+                <div class="small-img-row">
+                  <div class="small-img">
+                      <img src="demokrati sliki/map.jpg">
+                          <a href="https://www.youtube.com/watch?v=tZBaAIJ8BD0" target="_blank">
+                               <button class="debata-btn"> Подкаст</button>
+                               </a>
+
+                  </div>
+                  <p>ЗОРАН ПЕТКОВСКИ за Градоначалник на Гази Баба!-Вонредно изборно издание на Демократски импулс <br></p>
+                </div>
+              </div>
+            
+
+            <div class="video-player" id="videoPlayer">
+                <video width="100%" controls autoplay id="myVideo">
+                    <source src="zoran video/Zoran klip 2.mp4" type="video/mp4">
+                    
+                </video>
+
+                <img src="icons/close.png" class="close-btn" onclick="stopVideo()">
+                
+
+            </div>
+            </div>
+            
+
+            <div class="container2">
+               <div class="row">
+                <div class="col">             
+                  <p>Чест ми е да Ви ја претставам Изборната Програма за Локалните избори 2025 г. </p>
+                 
+                </div>  
+                <div class="col"> 
+                 <a href="docs/izborna-programa.pdf" download class="btn-prevzemi">
+                   Превземи
+                   </a>
+                 </div>
+
+            </div>
+
+            <script>
+                var videoPlayer = document.getElementById("videoPlayer");
+                var myVideo = document.getElementById("myVideo");
+
+                function stopVideo() {
+
+                  videoPlayer.style.display ="none";
+                  myVideo.pause();
+
+                }
+
+                function playVideo(file) {
+                  myVideo.src = file;
+                  videoPlayer.style.display = "block";
+
+                }
+
+            
+
+      
+
+                 
+
+
+
+
+            </script>
+
+  
+
+
+
+    </body>
+
+
+
+            
+
+
+
+   
+
+
+
+  </html>
